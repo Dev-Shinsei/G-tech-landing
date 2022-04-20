@@ -1,4 +1,4 @@
-// Select The Elements
+// Selecionando elementos
 var toggle_btn;
 var big_wrapper;
 var hamburger_menu;
@@ -16,7 +16,6 @@ declare();
 let dark = false;
 
 function toggleAnimation() {
-  // Clone the wrapper
   dark = !dark;
   let clone = big_wrapper.cloneNode(true);
   if (dark) {
@@ -35,7 +34,7 @@ function toggleAnimation() {
     document.body.classList.remove("stop-scrolling");
     big_wrapper.remove();
     clone.classList.remove("copy");
-    // Reset Variables
+    // Reset de Variáveis
     declare();
     events();
   });
